@@ -1,0 +1,155 @@
+.backOffice-container {
+    height: 100%;
+}
+
+.backOffice-container .header-backOffice-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    align-items: center;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+}
+
+.content-container .left-clone-container{
+    height: 100vh;
+    width: 200px;
+    background: #000;
+    flex-shrink: 0;
+}
+
+.content-container .left-container{
+    padding: 10px 26px;
+    background: #000;
+    position: fixed;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.content-container .left-container ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container .left-container ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.content-container .left-container ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.content-container .left-container ul li a:hover{
+   color: rgb(48, 131, 135);
+}
+
+.content-container .left-container ul li .clicked{
+    color: rgb(48, 131, 135);
+    text-decoration: underline;
+ }
+ 
+
+
+.content-container .right-container{
+    width: 100%;
+}
+
+.content-container .right-container .save-data {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin: 10px;
+}
+
+
+.content-container .right-container .services-container{
+    margin: 20px;
+    position: relative;
+}
+
+.select-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.select-icon-container  .icon-selected-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.select-icon-container .icon-selected-container .icon-selected{
+    text-align: center;
+    font-size: 36px;
+    display: flex;
+}
+
+
+.select-icon-container .icon-selected-container .icon-chevron{
+    border: solid;
+    background: #1a4d4a;
+    color: #fff;
+    display: flex;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;    
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+.select-icon-container .icon-selected-container .icon-chevron:hover{
+    background: #389993;
+
+}
+
+.select-icon-container .select-icon {
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 4px #cac2c2;
+    position: absolute;
+    top: 38px;
+    z-index: 1;
+    display: none;
+}
+
+.select-icon-container .select-icon.dropdown-showed {
+    display: flex;
+    font-size: 13px;
+}
+
+.select-icon-container .select-icon::-webkit-scrollbar {
+  display: none;
+}
+
+.select-icon-container .select-icon span {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.select-icon-container .select-icon span:hover{
+    display: flex;
+}

@@ -1,0 +1,36 @@
+.login, .register {    
+    background: hsla(147, 56%, 74%, 1);
+
+    background: linear-gradient(90deg, hsla(147, 56%, 74%, 1) 0%, hsla(170, 92%, 35%, 1) 98%);
+
+    background: -moz-linear-gradient(90deg, hsla(147, 56%, 74%, 1) 0%, hsla(170, 92%, 35%, 1) 98%);
+
+    background: -webkit-linear-gradient(90deg, hsla(147, 56%, 74%, 1) 0%, hsla(170, 92%, 35%, 1) 98%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#97E2B9", endColorstr="#07AC91", GradientType=1 );
+}
+
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fields-container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 1px 17px #f3cece;
+    padding: 73px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.field {
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+button {
+    text-transform: uppercase;
+}

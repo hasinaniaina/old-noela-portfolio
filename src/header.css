@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+
+body{
+    font-family: 'Josefin Sans', cursive!important;
+}
+
+.header-container{
+    width: 100%;
+    height: 100vh;
+    background: url('/images/banner.jpg');
+    position:relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.front-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(172 172 172 / 80%);
+}
+
+.front-background .noela-logo-container img{
+    width: 185px;
+    position: fixed;
+    margin: 3px 40px;
+}
+
+.front-background .btn-success{
+    position: fixed;
+    right: 0;
+    margin: 10px;
+}
+
+
+.title-button-about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;    
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-button-about-container .virtual-assistant-container{
+    overflow: hidden;
+}
+
+.title-button-about-container .virtual-assistant-container form{
+    margin-bottom: 20px;
+}
+
+.title-button-about-container .virtual-assistant-container form .header-title-backoffice{
+    background: transparent;
+    width: 799px;
+    color: #fff;
+    text-align: center;
+    font-size: 53px;
+    color: #FFFFFF;   
+    font-weight: bold;
+    text-align: center;    
+    letter-spacing: -3px;
+    text-shadow: 1px 1px 4px #000;   
+    border: none;
+}
+
+.title-button-about-container .virtual-assistant-container form .header-title-backoffice:focus{
+    box-shadow: none;
+}
+
+
+.title-button-about-container .virtual-assistant-container form .header-title-backoffice::placeholder{
+    color: #A4A4A4;
+    text-align: center;
+}
+
+
+.title-button-about-container h1{
+    font-size: 53px;
+    color: #FFFFFF;   
+    font-weight: bold;
+    text-align: center;    
+    letter-spacing: -3px;
+    text-shadow: 1px 1px 4px #000;    
+
+}
+
+.button-download-cv-container{
+    text-align: center;
+}
+
+.button-download-cv-container button{
+    background: #793606;
+    color: #fff;
+    padding: 19px;
+    border-radius: 9px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+}
+
+.button-download-cv-container button:hover{
+    background: #382400;
+}
+.hello-image-noela-container{
+    display: flex;
+    width: 648px;
+    background: #fff;
+    position: absolute;
+    top: 76%;
+    padding: 39px;
+}
+
+@media screen and (max-width: 950px) {
+    .hello-image-noela-container{
+        top: 74%;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .hello-image-noela-container{
+        border-radius: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hello-image-noela-container{
+        top: 80%;
+    }
+}
+
+.hello-image-noela-container .image{
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 648px) {
+    .hello-image-noela-container .image{
+        margin-bottom: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    } 
+}
+
+
+.hello-image-noela-container .image img{
+    width: 197px;
+}
+
+.hello-image-noela-container .about-her{
+    text-align: justify;
+}
+
+.hello-image-noela-container .about-her p:first-child{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.hello-image-noela-container .about-her p .about-title-backOffice{
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+}
+.hello-image-noela-container .about-her p .about-content-backOffice{
+    font-size: 17px;
+    color: #A4A4A4;
+    height: 100%;
+    border: none;
+}
+
+.hello-image-noela-container .about-her p .about-title-backOffice, .about-content-backOffice{
+    box-shadow: none;
+}
+
+
+.hello-image-noela-container .about-her p:last-child{
+    font-size: 17px;
+    color: #A4A4A4;
+}
+
