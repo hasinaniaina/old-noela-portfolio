@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [
     react()
   ],
-  build: { chunkSizeWarningLimit: 50000}
+  build: { chunkSizeWarningLimit: 50000},
+  base: "https://noela-portfolio.onrender.com"
 })
