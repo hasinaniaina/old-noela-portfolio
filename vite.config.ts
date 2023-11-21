@@ -7,5 +7,10 @@ export default defineConfig({
     react()
   ],
   build: { chunkSizeWarningLimit: 50000},
-  base: "https://noela-portfolio.onrender.com"
+  base: "https://noela-portfolio.onrender.com",
+  server: {
+    host: true,
+    strictPort: true,
+    port: 8000,
+  }
 })
