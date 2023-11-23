@@ -23,7 +23,7 @@ body{
 
 .front-background .noela-logo-container img{
     width: 185px;
-    position: fixed;
+    position: absolute;
     margin: 3px 40px;
 }
 
@@ -34,7 +34,7 @@ body{
 }
 
 
-.title-button-about-container{
+.title-button-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,15 +43,15 @@ body{
     text-align: center;
 }
 
-.title-button-about-container .virtual-assistant-container{
+.title-button-container .virtual-assistant-container{
     overflow: hidden;
 }
 
-.title-button-about-container .virtual-assistant-container form{
+.title-button-container .virtual-assistant-container form{
     margin-bottom: 20px;
 }
 
-.title-button-about-container .virtual-assistant-container form .header-title-backoffice{
+.title-button-container .virtual-assistant-container form .header-title-backoffice{
     background: transparent;
     width: 799px;
     color: #fff;
@@ -65,19 +65,19 @@ body{
     border: none;
 }
 
-.title-button-about-container .virtual-assistant-container form .header-title-backoffice:focus{
+.title-button-container .virtual-assistant-container form .header-title-backoffice:focus{
     box-shadow: none;
 }
 
 
-.title-button-about-container .virtual-assistant-container form .header-title-backoffice::placeholder{
+.title-button-container .virtual-assistant-container form .header-title-backoffice::placeholder{
     color: #A4A4A4;
     text-align: center;
 }
 
 
-.title-button-about-container h1{
-    font-size: 53px;
+.title-button-container h1{
+    font-size: 81px;
     color: #FFFFFF;   
     font-weight: bold;
     text-align: center;    
@@ -91,7 +91,7 @@ body{
 }
 
 .button-download-cv-container button{
-    background: #793606;
+    background: #000;
     color: #fff;
     padding: 19px;
     border-radius: 9px;
@@ -103,23 +103,47 @@ body{
 .button-download-cv-container button:hover{
     background: #382400;
 }
-.hello-image-noela-container{
+
+.about-container{
+    height: 100vh;
     display: flex;
-    width: 648px;
-    background: #fff;
-    position: absolute;
-    top: 76%;
-    padding: 39px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 950px) {
-    .hello-image-noela-container{
-        top: 74%;
-    }
+.about-container .who-i-am-container {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.about-container .who-i-am-container h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about-container .who-i-am-container hr {
+    width: 123px;
+    border-top: solid 1px #000;
+}
+
+.about-container .hello-image-noela-container{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    padding: 39px;
+    justify-content: center;
+}
+
+
+.about-container .hello-image-noela-container .image{
+    margin-right: 20px;
+} 
 
 @media screen and (max-width: 648px) {
-    .hello-image-noela-container{
+    .about-container .hello-image-noela-container{
         border-radius: 0;
         width: 100%;
         flex-wrap: wrap;
@@ -128,18 +152,9 @@ body{
     }
 }
 
-@media screen and (max-width: 420px) {
-    .hello-image-noela-container{
-        top: 80%;
-    }
-}
-
-.hello-image-noela-container .image{
-    margin-right: 40px;
-}
 
 @media screen and (max-width: 648px) {
-    .hello-image-noela-container .image{
+    .about-container .hello-image-noela-container .image{
         margin-bottom: 20px;
         border-radius: 50%;
         overflow: hidden;
@@ -147,37 +162,37 @@ body{
 }
 
 
-.hello-image-noela-container .image img{
+.about-container .hello-image-noela-container .image img{
     width: 197px;
 }
 
-.hello-image-noela-container .about-her{
+.about-container .hello-image-noela-container .about-her{
     text-align: justify;
 }
 
-.hello-image-noela-container .about-her p:first-child{
-    font-size: 19px;
+.about-container .hello-image-noela-container .about-her p:first-child{
+    font-size: 26px;
     font-weight: bold;
 }
 
-.hello-image-noela-container .about-her p .about-title-backOffice{
+.about-container .hello-image-noela-container .about-her p .about-title-backOffice{
     font-size: 19px;
     font-weight: bold;
     border: none;
 }
-.hello-image-noela-container .about-her p .about-content-backOffice{
+.about-container .hello-image-noela-container .about-her p .about-content-backOffice{
     font-size: 17px;
     color: #A4A4A4;
     height: 100%;
     border: none;
 }
 
-.hello-image-noela-container .about-her p .about-title-backOffice, .about-content-backOffice{
+.about-container .hello-image-noela-container .about-her p .about-title-backOffice, .about-content-backOffice{
     box-shadow: none;
 }
 
 
-.hello-image-noela-container .about-her p:last-child{
+.about-container .hello-image-noela-container .about-her p:last-child{
     font-size: 17px;
     color: #A4A4A4;
 }

@@ -8,6 +8,7 @@ import './services.css'
 import './contact.css'
 import './login.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import './loading.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>

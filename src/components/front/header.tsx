@@ -37,11 +37,11 @@ function Header() {
 
     return <>
         <div className="header-container">
-            <div className="front-background">
+            <div ref={ref} className="front-background">
                 <div className="noela-logo-container">
-                    <img src="../../../images/logo-noela.png" alt="noela logo" />
+                    <img className="rotate" src="../../../images/logo-noela.png" alt="noela logo" />
                 </div>
-                <div className="container title-button-about-container">
+                <div className="container title-button-container">
                     <motion.div ref={ref}
                      variants={{
                         hidden: {opacity: 0, y:-75},
@@ -56,29 +56,27 @@ function Header() {
                             <button>Download my CV</button>
                         </div>
                     </motion.div>
-                    <motion.div 
-                    ref={ref}
-                    variants={{
-                       hidden: {opacity: 0, y:-75},
-                       visible: {opacity: 1, y: 0}
-                   }}
-                   initial="hidden"
-                   animate={mainControls}
-                   transition={{duration:2, delay: 0.15}}
-                    className="hello-image-noela-container">
-                        <div className="image">
-                            <img src="../images/noela-profil.jpg" alt="noela-image" />
-                        </div>
-                        <div className="about-her">
-                            <p className="intro">
-                                {datas.aboutTitle}
-                            </p>
-                            <p>
-                                {datas.aboutInfo}
-                            </p>
-                        </div>
-                    </motion.div>
                 </div>
+            </div>
+        </div>
+        <div className="about-container">   
+            <div className="who-i-am-container">
+                <h1>Who am i?</h1>
+                <hr />
+            </div>
+            <div
+                className="hello-image-noela-container">
+                    <div className="image">
+                        <img src="../images/noela-profil.jpg" alt="noela-image" />
+                    </div>
+                    <div className="about-her">
+                        <p className="intro">
+                            {datas.aboutTitle}
+                        </p>
+                        <p>
+                            {datas.aboutInfo}
+                        </p>
+                    </div>
             </div>
         </div>
     </>
