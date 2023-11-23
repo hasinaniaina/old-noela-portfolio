@@ -65,7 +65,7 @@ function Contact() {
     }
 
     return (
-        <>
+        <div className='section'>
             <div className="contact-container">
                 <div className="front-background-contact">  
                     <div className="container">
@@ -109,7 +109,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

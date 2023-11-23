@@ -43,7 +43,7 @@ function Header() {
     }, [isInView]);
 
 
-    return <>
+    return <div className='section'>
         <div className="header-container">
             <div ref={ref} className="front-background">
                 <div className="noela-logo-container">
@@ -87,7 +87,7 @@ function Header() {
                     </div>
             </  div>
         </div>
-    </>
+    </div>
 }
 
 export default Header;

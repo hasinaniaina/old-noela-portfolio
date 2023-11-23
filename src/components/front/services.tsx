@@ -42,7 +42,7 @@ function Services() {
       }, []);
 
     return (
-        <>
+        <div className='section'>
             <div  className="services-container">
                 <div className="container">
                     <div className="title">
@@ -68,7 +68,7 @@ function Services() {
                     </motion.div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

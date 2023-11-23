@@ -25,7 +25,7 @@ export default function Loading() {
 
   return (
     <div className={'loading-container-' + display}>
-      <img className="rotate" src="../../../images/logo-noela.png" alt="noela logo" />
+      <p>Welcome to my Portfolio</p>
     </div>
   )
 }
