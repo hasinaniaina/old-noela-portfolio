@@ -1,6 +1,14 @@
 import { motion, useInView, useAnimation } from 'framer-motion';
 import {useEffect, useRef, useState} from 'react';
 import axios from 'axios';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fab, fas, far);
 
 function Header() {   
     const [datas, setDatas] = useState({headerTitle: "", aboutTitle: "", aboutInfo: ""});
@@ -53,7 +61,7 @@ function Header() {
                     className="virtual-assistant-container">
                         <h1>{datas.headerTitle}</h1>
                         <div className="button-download-cv-container">
-                            <button>Download my CV</button>
+                            <button><FontAwesomeIcon icon="file-pdf" />Download my CV</button>
                         </div>
                     </motion.div>
                 </div>
@@ -77,7 +85,7 @@ function Header() {
                             {datas.aboutInfo}
                         </p>
                     </div>
-            </div>
+            </  div>
         </div>
     </>
 }

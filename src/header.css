@@ -18,7 +18,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color:rgb(172 172 172 / 80%);
+    background-color:rgb(30 11 1 / 95%);
 }
 
 .front-background .noela-logo-container img{
@@ -82,26 +82,41 @@ body{
     font-weight: bold;
     text-align: center;    
     letter-spacing: -3px;
-    text-shadow: 1px 1px 4px #000;    
+    text-shadow: 0 0 80px rgb(14 4 4 / 50%);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite; 
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
 
 }
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
 
 .button-download-cv-container{
     text-align: center;
 }
 
 .button-download-cv-container button{
-    background: #000;
+    background: transparent;
     color: #fff;
     padding: 19px;
-    border-radius: 9px;
+    border-radius: 36px;
     font-size: 17px;
     font-weight: bold;
-    border: none;
+    border: 3px solid #ffff;
 }
 
 .button-download-cv-container button:hover{
-    background: #382400;
+    background: #fff;
+    border: 3px solid #ffff;
+    color: #000;
 }
 
 .about-container{
